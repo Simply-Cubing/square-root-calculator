@@ -9,7 +9,7 @@ def sqrt(x):
   if x >= 0:
     rt = math.sqrt(x)
     #truncate if number is perfect square
-    if rt**2 == x:
+    if int(rt+0.5)**2 == x:
       rtint = math.trunc(rt)
       print(rtint)
     else: 
