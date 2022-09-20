@@ -6,11 +6,12 @@ def sqrt(x):
   if x < 0:
     crt = cmath.sqrt(x)
     print(crt)
-
-
   if x >= 0:
     rt = math.sqrt(x)
-    print(rt)   
-
-sqrt(x)
-  
+    #truncate if number is perfect square
+    if rt**2 == x:
+      rtint = math.trunc(rt)
+      print(rtint)
+    else: 
+      print(rt)
+  sqrt(x)
