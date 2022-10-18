@@ -1,7 +1,7 @@
 import cmath
 import math
 x = float(input("Input number to find it's square root: " ))
-
+#calculates root depending on whether it's complex or real
 def sqrt(x):
   if x < 0:
     crt = cmath.sqrt(x)
